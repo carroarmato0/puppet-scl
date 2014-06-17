@@ -30,6 +30,7 @@ class scl::params {
       'repo_enabled'        => '1',
       'repo_gpgcheck'       => '0',
       'min_os_release_ver'  => '6.0',
+      'enable_default'      => '0',
     },
     'python27' => {
       'repo_name'           => 'scl_python27',
