@@ -29,15 +29,10 @@ class scl::ruby193 (
 
   # If the user want ruby193 to be de defaullt ruby on the system
   if $enable_default == '1' {
-    
-    # Get the package
-    package { 'ruby193':
-      ensure   => 'present',
-    }
 
     # Tell the shell to use the ruby
     file { '/etc/profile.d/scl-ruby193-enable.sh':
-      ensure  => 'file',
+      ensure   => 'file',
       content  => template('scl/scl-ruby193-enable.sh.erb'),
     }
   }
